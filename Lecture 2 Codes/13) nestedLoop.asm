@@ -19,3 +19,20 @@ mov dx, '*'
 mov ah, 2
 int 21h
 
+mov dx, 10
+mov ah, 2
+int 21h
+
+mov dx, 13
+mov ah, 2
+int 21h
+
+loop l2
+
+inc bx
+pop cx
+
+loop l1
+
+main endp
+end main
