@@ -17,3 +17,22 @@ mov si, offset string
 
 mov cx, 3
 
+l1:
+mov bx, [si]
+push bx
+inc si
+loop l1
+
+mov cx, 3
+
+l2:
+pop dx
+mov ah, 2
+int 21h
+loop l2
+
+mov ah, 4ch
+mov 21h
+
+main endp
+end main
