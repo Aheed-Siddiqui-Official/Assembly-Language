@@ -8,3 +8,12 @@ dosseg
 .code
 main proc
 
+mov al, 5
+mov al, 2
+
+mul bl
+
+AAM
+
+mov ch, ah
+mov cl, al
