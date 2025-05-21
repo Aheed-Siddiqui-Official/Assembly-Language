@@ -17,3 +17,18 @@ AAM
 
 mov ch, ah
 mov cl, al
+
+mov dl, ch
+add dl, 48
+mov ah, 2
+int 21h
+int ah, 4ch
+mov dl, cl
+add dl, 48
+mov ah, 2 
+int 21h
+mov ah, 4ch
+int 21h
+ 
+main endp
+end main
